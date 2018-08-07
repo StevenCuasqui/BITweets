@@ -51,6 +51,8 @@ Bajo el telón tecnológico de las redes sociales, se encuentran twitter, Facebo
 
 Las organizaciones interesadas en conocer la opinión pública de un grupo en específico encuentra en los análisis desarrollados en el presente trabajo una herramiente capaz de proporcionar información útil y que permite mejorar la competitividad de sus servicios o productos de acuerdo a la reacción del público.
 
+Para el futuro, se tiene pensado implementar un clasificador basado en deep-learning, el cual ya se lo ha implementado, aunque su precision no es muy aceptable.
+
 Apéndice
 
 Apéndice A. Comandos para compilación de scripts Python.
