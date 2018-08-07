@@ -17,18 +17,18 @@ operacion=sys.argv[2]
 
 #Diccionario con las vistas por horas
 horas={
-	'esp-rus':{'esp':'http://localhost:5984/espana/_design/dEspana/_view/mun_01JUL_en','rus':'','rus':''},
-	'cro-dim':{'cro':'','dim':'','rus':''},
-	'bel-eng':{'bel':'','eng':'','rus':''},
-	'fran-cro':{'fran':'http://localhost:5984/francia/_design/dFrancia/_view/mundial_30Jun','cro':'','rus':''},	
+	'esp-rus':{'esp':'http://localhost:5984/espana/_design/dEspana/_view/01JUL_hora','rus':'http://localhost:5984/rusia/_design/dRusia/_view/01JUL_hora','rus':'http://localhost:5984/rusia/_design/dRusia/_view/01JUL_hora'},
+	'cro-dim':{'cro':'http://localhost:5984/croacia/_design/croacia/_view/hora_01JUL','dim':'http://localhost:5984/dinamarca/_design/dDin/_view/hora_01JUL','rus':'http://localhost:5984/rusia/_design/dRusia/_view/01JUL_hora'},
+	'bel-eng':{'bel':'http://localhost:5984/belgica/_design/dBelgica/_view/hora_14JUL','eng':'http://localhost:5984/inglaterra/_design/dIngla/_view/14JUL_hora','rus':'http://localhost:5984/rusia/_design/dRusia/_view/hora_14JUL'},
+	'fran-cro':{'fran':'http://localhost:5984/francia/_design/dFrancia/_view/mundial_30Jun','cro':'http://localhost:5984/croacia/_design/croacia/_view/15JUL_hora','rus':'http://localhost:5984/rusia/_design/dRusia/_view/15JUL_hora'},	
 }
 
 #Diccionario de vistas por idiomas
 idiomas={
-	'esp-rus':{'esp':'','rus':'','rus':''},
-	'cro-dim':{'cro':'','dim':'','rus':''},
-	'bel-eng':{'bel':'','eng':'','rus':''},
-	'fran-cro':{'fran':'','cro':'','rus':''},
+	'esp-rus':{'esp':'http://localhost:5984/espana/_design/dEspana/_view/01JUL_idioma','rus':'http://localhost:5984/rusia/_design/dRusia/_view/01JUL_idioma','rus':'http://localhost:5984/rusia/_design/dRusia/_view/01JUL_idioma'},
+	'cro-dim':{'cro':'http://localhost:5984/croacia/_design/croacia/_view/idioma','dim':'http://localhost:5984/dinamarca/_design/dDin/_view/01JUL_idioma','rus':'http://localhost:5984/rusia/_design/dRusia/_view/01JUL_idioma'},
+	'bel-eng':{'bel':'http://localhost:5984/belgica/_design/dBelgica/_view/14JUL_idioma','eng':'http://localhost:5984/inglaterra/_design/dIngla/_view/14JUL_idioma','rus':'http://localhost:5984/rusia/_design/dRusia/_view/14JUL_idioma'},
+	'fran-cro':{'fran':'http://localhost:5984/francia/_design/dFrancia/_view/15JUL_idioma','cro':'http://localhost:5984/croacia/_design/croacia/_view/15JUL_idioma','rus':'http://localhost:5984/rusia/_design/dRusia/_view/15JUL_idioma'},
 }
 
 
@@ -73,10 +73,27 @@ def generar_grafico(lista_reduce_paises):
 	plt=None
 	import matplotlib.pyplot as plt
 	import numpy as np
+	nombre1=None
+	nombre2=None
 
-
+	if 'cro' in partido.split("-")[0]:
+		nombre1  = 'Croacia'
+	if 'esp' in partido.split("-")[0]:
+		nombre1  = 'Spain'
+	if 'eng' in partido.split("-")[0]:
+		nombre1  = 'Inglaterra'
+	if 'rus' in partido.split("-")[1]:
+		nombre2  = 'Rusia'
+	if 'dim' in partido.split("-")[1]:
+		nombre2  = 'Dinamarca'
+	if 'bel' in partido.split("-")[1]:
+		nombre2  = 'Belgica'
+	
+	"""
 	nombre1  = 'Croacia' if 'cro' in partido.split("-")[0] else 'Spain' if 'esp' in partido.split("-")[0] else 'Inglaterra'
+	
 	nombre2 = 'Rusia'   if 'rus' in partido.split("-")[1] else 'Dinamarca' if 'dim' in partido.split("-")[0] else 'Belgica'
+	"""
 
 	horas1 = [ i[0] for i in lista_reduce_paises[0] ]
 	score1 = [ i[1] for i in lista_reduce_paises[0] ]
