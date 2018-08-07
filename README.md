@@ -37,7 +37,7 @@ Para el análisis de sentimientos, se utiliza una vista mediante Javascript con 
 
 * Presentación
 
-La presentación de los resultados para cada ítem descrito en el apartado de Análisis se realiza a manera de gráficos de barras, gráficos pastel y mapa de calor. Estas presentaciones sirven para mostrar de manera más sencilla los resultados obtenidos del desarrollo del presente trabajo.
+La presentación de los resultados para cada ítem descrito en el apartado de Análisis se realiza a manera de gráficos de barras, gráficos pastel y mapa de calor. Estas presentaciones sirven para mostrar de manera más sencilla los resultados obtenidos del desarrollo del presente trabajo. Los gráficos pueden ser encontrados en la carpeta img-muestra del repositorio https://github.com/StevenCuasqui/BITweets 
 
 ## Resultados
 
