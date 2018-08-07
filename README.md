@@ -5,7 +5,7 @@
 
 ## Método
 
-*Adquisición de datos
+* Adquisición de datos
 
 La adquisición de los datos para el presente trabajo se realizó utilizando un cosechador de tweets con las credenciales de desarrollador en Twitter desarrollado en Python y entregado por medio del aula virtual. Los tweets se almacenan en CouchDB, una base de datos NoSQL, en Ubuntu. Para esto, el script requiere las coordenadas de la ubicación geográfica en formato CSV y la base de datos de CouchDB para almacenar los tweets recolectados.
 
