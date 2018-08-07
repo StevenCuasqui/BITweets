@@ -3,7 +3,7 @@
 - Steven Cuasqui
 - Andrés Velasco
 
-Método
+## Método
 
 Adquisición de datos
 
@@ -39,13 +39,13 @@ Presentación
 
 La presentación de los resultados para cada ítem descrito en el apartado de Análisis se realiza a manera de gráficos de barras, gráficos pastel y mapa de calor. Estas presentaciones sirven para mostrar de manera más sencilla los resultados obtenidos del desarrollo del presente trabajo.
 
-Resultados
+## Resultados
 
     • Se observa durante el análisis de sentimientos, los gráficos muestran un alto índice de tweets neutrales, principalmente en los países europeos. Con lo cual se puede llegar a la relativa idea que el mundial de futbol no es tan relevante para esta región.
     • La gran mayoría de los tweets recopilados, fueron emitidos dentro de las grandes urbes de los países analizados.
     • La cantidad de tweets contabilizados durante los partidos es superior a los generados fuera de los horarios de estos, con esto se puede determinar la atracción que genera un encuentro de fútbol en el mundial de la FIFA.
 
-Conclusiones y trabajo futuro
+## Conclusiones y trabajo futuro
 
 Bajo el telón tecnológico de las redes sociales, se encuentran twitter, Facebook.. que, gracias a sus herramientas basadas en servicios web, ha facilitado el trabajo de los analistas de datos. Por lo tanto, con una gran capacidad computacional y toda la gran cantidad de información que se podrá obtener fácilmente en un futuro cercano. Con lo cual favorecerán al mercado, gracias al avanzado minado de opinión que se podrá obtener.
 
@@ -53,7 +53,7 @@ Las organizaciones interesadas en conocer la opinión pública de un grupo en es
 
 Para el futuro, se tiene pensado implementar un clasificador basado en deep-learning, el cual ya se lo ha implementado, aunque su precision no es muy aceptable.
 
-Apéndice
+## Apéndice
 
 Apéndice A. Comandos para compilación de scripts Python.
 
