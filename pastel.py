@@ -16,14 +16,13 @@ pais=sys.argv[1]
 
 paises={
     'esp':'http://localhost:5984/espana/_design/dEspana/_view/mun_01JUL_en',
-    'rus_jn30':'',
-    'cro':'http://localhost:5984/croacia/_design/croacia/_view/text_croacia_up',
-    'dim':'http://localhost:5984/dinamarca/_design/text_en/_view/dina',
-    'rus_jl14':'',
-    'bel':'http://localhost:5984/belgica/_design/belgicavista/_view/belgicavista',
-    'eng':'http://localhost:5984/inglaterra/_design/text/_view/ingla',
-    'rus_jl15':'',
-    'fran':'http://localhost:5984/francia/_design/dFrancia/_view/mundial_30Jun',
+    'rus_jn30':'http://localhost:5984/rusia/_design/dRusia/_view/mun',
+    'cro':'http://localhost:5984/croacia/_design/croacia/_view/mun_01JUL_en',
+    'dim':'http://localhost:5984/dinamarca/_design/dDin/_view/mun_01JUL_en',
+    'bel':'http://localhost:5984/belgica/_design/dBelgica/_view/mun_14JUL_en',
+    'eng':'http://localhost:5984/inglaterra/_design/dIngla/_view/mun_14JUL_en',
+    'rus_jl15':'http://localhost:5984/rusia/_design/dRusia/_view/mun_15JUL_en',
+    'fran':'http://localhost:5984/francia/_design/dFrancia/_view/mun_15JUL_en',
 }
 
 
@@ -115,4 +114,3 @@ title('Evaluacion de Sentimientos del pais: {}'.format(nombres_paises[pais]), bb
 savefig("tweets_sentiments_{}.png".format(nombres_paises[pais]))
 show()#mostrar grafico
 f.close()
-
